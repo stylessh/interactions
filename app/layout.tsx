@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: "Interactions",
   description: "Best interactions for your website.",
 
+  metadataBase: new URL("https://interactions-matter.vercel.app"),
+
   openGraph: {
     type: "website",
     images: [
