@@ -25,7 +25,7 @@ export function Pill() {
       aria-label="A pill-shaped component with some controls inside."
     >
       <motion.div
-        className="bg-foreground rounded-full h-5 w-full bg-green-500"
+        className="bg-foreground rounded-full h-3 md:h-5 w-full bg-green-500"
         initial={{ scale: 0.2, opacity: 0 }}
         animate={
           shouldAnimate
@@ -46,7 +46,7 @@ export function Pill() {
       />
 
       <motion.div
-        className="bg-foreground rounded-full w-8 h-5 bg-orange-500"
+        className="bg-foreground rounded-full w-8 h-3 md:h-5 bg-orange-500"
         initial={{ scale: 0.2, opacity: 0 }}
         animate={
           shouldAnimate
@@ -67,7 +67,7 @@ export function Pill() {
       />
 
       <motion.div
-        className="bg-foreground rounded-full h-5 w-12 bg-red-500"
+        className="bg-foreground rounded-full h-3 md:h-5 w-12 bg-red-500"
         initial={{ scale: 0.2, opacity: 0 }}
         animate={
           shouldAnimate

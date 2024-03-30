@@ -23,7 +23,7 @@ export function Alarm() {
       aria-label="Alarm component with a time of 12:00 AM."
     >
       <motion.p
-        className="inline-flex gap-x-1"
+        className="inline-flex gap-x-1 text-sm md:text-base"
         initial={{ opacity: 0, filter: "blur(4px)" }}
         animate={shouldAnimate ? { opacity: 1, filter: "blur(0px)" } : {}}
         transition={{ delay: 0.2 }}
@@ -33,7 +33,7 @@ export function Alarm() {
       </motion.p>
 
       <motion.div
-        className="bg-green-500 text-background p-1.5 rounded-[99px]"
+        className="bg-green-500 text-background p-0.5 md:p-1.5 rounded-[99px]"
         initial={{ opacity: 0, scale: 0.4, filter: "blur(4px)" }}
         animate={
           shouldAnimate ? { opacity: 1, scale: 1, filter: "blur(0px)" } : {}
@@ -46,7 +46,7 @@ export function Alarm() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5"
+          className="size-4 md:size-5"
           animate={shouldAnimate ? { rotate: [0, 5, -5, 5, -5, 0] } : {}}
           transition={{ duration: 0.4, repeat: Infinity, delay: 1 }}
         >

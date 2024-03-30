@@ -9,14 +9,14 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen">
-      <header className="max-w-screen-sm mx-auto pt-24">
+      <header className="max-w-screen-sm mx-auto pt-24 w-[90%]">
         <h1>
           interactions <span className="text-primary">matter</span>
         </h1>
       </header>
 
-      <section className="max-w-screen-sm mx-auto my-8 space-y-4">
-        <p className="w-5/6 text-pretty">
+      <section className="max-w-screen-sm mx-auto my-8 space-y-4 w-[90%]">
+        <p className="md:w-5/6 text-pretty">
           here you can find a curated list of demos that showcase the power of
           delightful interactions.
         </p>
@@ -38,7 +38,7 @@ export default async function Home() {
         </p>
       </section>
 
-      <section className="max-w-screen-sm mx-auto mt-20 space-y-4">
+      <section className="max-w-screen-sm mx-auto mt-16 space-y-4 w-[90%]">
         <h2>check out the latest interactions</h2>
 
         <ul className="px-6 space-y-2">

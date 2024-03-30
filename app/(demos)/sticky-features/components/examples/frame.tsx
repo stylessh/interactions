@@ -64,7 +64,7 @@ export function Frame() {
               transition={{ delay: 0.8 }}
             />
 
-            <div className="grid grid-cols-[60%,1fr] gap-2 h-[138px] mt-2">
+            <div className="grid grid-cols-[60%,1fr] gap-2 h-full md:h-[138px] mt-2">
               <motion.div
                 className="bg-orange-500/10 rounded-md"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -80,11 +80,11 @@ export function Frame() {
             </div>
 
             <Cursor
-              className="absolute left-6 top-24 text-primary"
+              className="absolute left-2 md:left-6 top-[70px] md:top-24 text-primary"
               delay={1.4}
             />
             <Cursor
-              className="absolute right-6 top-20 text-orange-500"
+              className="absolute right-2 md:right-6 top-16 md:top-20 text-orange-500"
               invert
               delay={1.45}
             />
