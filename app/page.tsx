@@ -2,7 +2,9 @@ import { Link } from "@/components/link";
 import { readdir } from "fs/promises";
 
 export default async function Home() {
-  const interactions = await readdir("./app/(demos)");
+  const interactions = (await readdir("./app/(demos)")).filter(
+    (file) => file.split(".").length <= 1
+  );
 
   return (
     <main className="min-h-screen">
@@ -38,9 +40,9 @@ export default async function Home() {
       <section className="max-w-screen-sm mx-auto mt-20 space-y-4">
         <h2>check out the latest interactions</h2>
 
-        <ul className="px-4">
+        <ul className="px-6 space-y-2">
           {interactions.map((interaction) => (
-            <li key={interaction}>
+            <li key={interaction} className="list-disc">
               <Link href={`/${interaction}`}>{interaction}</Link>
             </li>
           ))}

@@ -17,9 +17,13 @@ export default function DemoLayout({
           sticky <span className="text-primary">features</span>
         </h1>
 
-        <Link href={demoLink} target="_blank">
-          code
-        </Link>
+        <div className="flex items-center space-x-6">
+          <Link href={"/"}>back to home</Link>
+
+          <Link href={demoLink} target="_blank">
+            code
+          </Link>
+        </div>
       </header>
 
       {children}
