@@ -1,6 +1,8 @@
 import { MergedBubbles } from "./examples/merged-bubbles";
 import { Pill } from "./examples/pill";
 import { Alarm } from "./examples/alarm";
+import { StackedCards } from "./examples/stacked-cards";
+import { Frame } from "./examples/frame";
 
 export const features = [
   {
@@ -25,16 +27,12 @@ export const features = [
     id: 4,
     title: "The complexity of simplicity.",
 
-    component: (
-      <div className="bg-primary w-1/2 aspect-[16/4] rounded-md shadow-md" />
-    ),
+    component: <StackedCards />,
   },
   {
     id: 5,
     title: "Delightful micro-interactions.",
 
-    component: (
-      <div className="bg-primary w-1/2 aspect-[16/4] rounded-md shadow-md" />
-    ),
+    component: <Frame />,
   },
 ] as const;
