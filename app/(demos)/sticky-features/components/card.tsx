@@ -1,5 +1,11 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import { motion } from "framer-motion";
+
+export const AnimationContext = createContext<{
+  shouldAnimate: boolean;
+}>({
+  shouldAnimate: false,
+});
 
 export function Card({
   children,
@@ -8,6 +14,8 @@ export function Card({
   children: React.ReactNode;
   onViewportEnter: () => void;
 }) {
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+
   return (
     <motion.li
       className="bg-background-100 rounded-md w-full aspect-[4/3] grid place-items-center"
@@ -22,9 +30,26 @@ export function Card({
         },
       }}
       viewport={{ amount: 0.9, margin: "0px 0px -250px 0px" }}
-      onViewportEnter={onViewportEnter}
+      onViewportEnter={() => {
+        if (!shouldAnimate) {
+          setShouldAnimate(true);
+        }
+
+        onViewportEnter();
+      }}
+      onViewportLeave={() => {
+        if (shouldAnimate) {
+          setShouldAnimate(false);
+        }
+      }}
     >
-      {children}
+      <AnimationContext.Provider
+        value={{
+          shouldAnimate,
+        }}
+      >
+        {children}
+      </AnimationContext.Provider>
     </motion.li>
   );
 }

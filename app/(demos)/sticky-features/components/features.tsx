@@ -1,4 +1,6 @@
+import { MergedBubbles } from "./examples/merged-bubbles";
 import { Pill } from "./examples/pill";
+import { Alarm } from "./examples/alarm";
 
 export const features = [
   {
@@ -11,17 +13,13 @@ export const features = [
     id: 2,
     title: "Experiences for everyone.",
 
-    component: (
-      <div className="bg-primary w-1/2 aspect-[16/4] rounded-md shadow-md" />
-    ),
+    component: <MergedBubbles />,
   },
   {
     id: 3,
     title: "Blend the line between form and function.",
 
-    component: (
-      <div className="bg-primary w-1/2 aspect-[16/4] rounded-md shadow-md" />
-    ),
+    component: <Alarm />,
   },
   {
     id: 4,

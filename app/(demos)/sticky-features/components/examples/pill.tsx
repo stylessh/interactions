@@ -4,23 +4,25 @@ import { motion } from "framer-motion";
 export function Pill() {
   return (
     <motion.div
-      className="bg-primary w-1/2 aspect-[16/2] rounded-[99px] shadow-md flex items-center justify-between px-1.5 gap-x-2"
-      initial={{ scale: 0.5, opacity: 1 }}
-      animate={{
+      className="bg-primary/10 w-1/2 aspect-[16/2] rounded-[99px] shadow-md flex items-center justify-between px-1.5 gap-x-2"
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{
         scale: 1,
+        opacity: 1,
         transition: {
           bounce: 0.4,
           type: "spring",
           duration: 0.5,
         },
       }}
+      viewport={{ amount: 0.9, margin: "-150px 0px 0px 0px" }}
       whileHover={{
         scaleX: 1.02,
       }}
       aria-label="A pill-shaped component with some controls inside."
     >
       <motion.div
-        className="bg-foreground rounded-full h-5 flex-1 bg-green-600"
+        className="bg-foreground rounded-full h-5 w-full bg-green-500"
         initial={{ scale: 0.2, opacity: 0 }}
         animate={{
           scale: 1,
@@ -37,7 +39,7 @@ export function Pill() {
       />
 
       <motion.div
-        className="bg-foreground rounded-full size-5 bg-orange-500"
+        className="bg-foreground rounded-full w-8 h-5 bg-orange-500"
         initial={{ scale: 0.2, opacity: 0 }}
         animate={{
           scale: 1,
@@ -50,14 +52,11 @@ export function Pill() {
 
             delay: 0.4,
           },
-        }}
-        whileHover={{
-          scaleX: 1.02,
         }}
       />
 
       <motion.div
-        className="bg-foreground rounded-full h-5 w-12 bg-red-600"
+        className="bg-foreground rounded-full h-5 w-12 bg-red-500"
         initial={{ scale: 0.2, opacity: 0 }}
         animate={{
           scale: 1,
@@ -70,9 +69,6 @@ export function Pill() {
 
             delay: 0.4,
           },
-        }}
-        whileHover={{
-          scaleX: 1.02,
         }}
       />
     </motion.div>

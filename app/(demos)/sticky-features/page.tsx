@@ -30,15 +30,15 @@ export default function StickyFeatures() {
             className="text-primary text-2xl"
             ref={titleRef}
             key={`feature-title-${activeFeature}`}
-            initial={initial ? { opacity: 1 } : { opacity: 0 }}
             animate={
               !initial
                 ? {
+                    x: -6,
                     y: -4,
-                    rotateY: -5,
+                    rotateY: -10,
                     opacity: 1,
                   }
-                : { opacity: 1 }
+                : { opacity: 1, rotateY: 0, z: 0 }
             }
             transition={{ duration: 0.5, type: "spring", bounce: 0.4 }}
           >
