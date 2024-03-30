@@ -24,7 +24,7 @@ export default function StickyFeatures() {
 
   return (
     <main className="min-h-screen">
-      <section className="relative max-w-screen-lg w-[90%] mx-auto pt-52 pb-[450px] grid md:grid-cols-2 gap-10">
+      <section className="relative max-w-screen-lg w-[90%] mx-auto pb-[450px] grid md:grid-cols-2 gap-10">
         <article className="py-2 md:sticky top-32 h-max">
           <motion.h1
             className="text-primary text-2xl"
@@ -55,7 +55,7 @@ export default function StickyFeatures() {
           </motion.p>
         </article>
 
-        <ul className="flex flex-col gap-y-10">
+        <ul className="flex flex-col gap-y-10 -mt-12">
           {features.map((feature) => (
             <Card
               key={feature.id}
