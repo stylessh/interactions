@@ -105,21 +105,8 @@ function Cursor(
     <motion.div
       {...props}
       initial={{ opacity: 0, scale: 0.9 }}
-      animate={["initial"]}
+      animate={shouldAnimate ? { opacity: 1, scale: 1 } : {}}
       transition={{ delay: props.delay }}
-      variants={{
-        initial: { opacity: 1, scale: 1 },
-        move: {
-          x: [0, 5, 0, -5, 0],
-          y: [0, 5, 0, -5, 0],
-
-          transition: {
-            duration: 1.5,
-            ease: "linear",
-            loop: Infinity,
-          },
-        },
-      }}
     >
       <svg
         width="17"
