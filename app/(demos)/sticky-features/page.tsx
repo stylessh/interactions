@@ -26,7 +26,7 @@ export default function StickyFeatures() {
   return (
     <DemoWrapper name="sticky-features">
       <section className="relative max-w-screen-lg w-[90%] mx-auto pb-[450px] grid md:grid-cols-2 gap-10">
-        <article className="py-2 md:sticky top-32 h-max">
+        <article className="py-2 mb-8 md:mb-0 md:sticky top-32 h-max">
           <motion.h1
             className="text-primary text-2xl"
             ref={titleRef}

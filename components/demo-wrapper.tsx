@@ -19,7 +19,7 @@ export function DemoWrapper({
 
   return (
     <main className="min-h-screen">
-      <header className="max-w-screen-lg w-[90%] mx-auto h-48 mt-16 flex items-start justify-between">
+      <header className="max-w-screen-lg w-[90%] mx-auto h-24 md:h-48 mt-8 md:mt-16 flex items-start justify-between">
         <h1>{demo.title}</h1>
 
         <div className="flex items-center space-x-6">

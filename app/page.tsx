@@ -1,10 +1,11 @@
 import { Link } from "@/components/link";
-import { readdir } from "fs/promises";
+import demos from "./(demos)/demos";
 
 export default async function Home() {
-  const interactions = (await readdir("./app/(demos)")).filter(
-    (file) => file.split(".").length <= 1
-  );
+  const interactions = demos.map((demo) => ({
+    title: demo.title.toLowerCase(),
+    path: demo.slug,
+  }));
 
   return (
     <main className="min-h-screen">
@@ -42,8 +43,8 @@ export default async function Home() {
 
         <ul className="px-6 space-y-2">
           {interactions.map((interaction) => (
-            <li key={interaction} className="list-disc">
-              <Link href={`/${interaction}`}>{interaction}</Link>
+            <li key={interaction.path} className="list-disc">
+              <Link href={`/${interaction.path}`}>{interaction.title}</Link>
             </li>
           ))}
         </ul>
