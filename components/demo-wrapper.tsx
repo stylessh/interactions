@@ -1,21 +1,26 @@
+import { redirect } from "next/navigation";
+import demos, { DemoSlug } from "../app/(demos)/demos";
 import { Link } from "@/components/link";
 
-export default function DemoLayout({
+export function DemoWrapper({
+  name,
   children,
 }: {
+  name: DemoSlug;
   children: React.ReactNode;
 }) {
-  // TODO: fetch the direct demo name, without having to do it with dynamic routing
-  // probably creating a json file (?)
+  const demo = demos.find((d) => d.slug === name);
+
+  if (!demo) return redirect("/");
+
   const demoLink =
-    "https://github.com/stylessh/interactions/tree/main/app/(demos)";
+    "https://github.com/stylessh/interactions/tree/main/app/(demos)/" +
+    demo.slug;
 
   return (
-    <div>
+    <main className="min-h-screen">
       <header className="max-w-screen-lg w-[90%] mx-auto h-48 mt-16 flex items-start justify-between">
-        <h1>
-          sticky <span className="text-primary">features</span>
-        </h1>
+        <h1>{demo.title}</h1>
 
         <div className="flex items-center space-x-6">
           <Link href={"/"}>back to home</Link>
@@ -27,6 +32,6 @@ export default function DemoLayout({
       </header>
 
       {children}
-    </div>
+    </main>
   );
 }

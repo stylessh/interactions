@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { Card } from "./components/card";
 import { motion } from "framer-motion";
 import { features } from "./components/features";
+import { DemoWrapper } from "@/components/demo-wrapper";
 
 export default function StickyFeatures() {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -23,7 +24,7 @@ export default function StickyFeatures() {
   };
 
   return (
-    <main className="min-h-screen">
+    <DemoWrapper name="sticky-features">
       <section className="relative max-w-screen-lg w-[90%] mx-auto pb-[450px] grid md:grid-cols-2 gap-10">
         <article className="py-2 md:sticky top-32 h-max">
           <motion.h1
@@ -66,6 +67,6 @@ export default function StickyFeatures() {
           ))}
         </ul>
       </section>
-    </main>
+    </DemoWrapper>
   );
 }
