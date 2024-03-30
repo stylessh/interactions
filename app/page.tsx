@@ -10,7 +10,7 @@ export default async function Home() {
     <main className="min-h-screen">
       <header className="max-w-screen-sm mx-auto pt-24">
         <h1>
-          interactions <span className="text-primary">matters</span>
+          interactions <span className="text-primary">matter</span>
         </h1>
       </header>
 
