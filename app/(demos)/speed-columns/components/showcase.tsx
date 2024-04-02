@@ -40,7 +40,7 @@ export function Showcase() {
           }}
         >
           <motion.h3
-            className="text-[8vw] text-background font-black absolute -bottom-[4vw] left-1/2 -translate-x-1/2"
+            className="text-7xl md:text-[8vw] text-background font-black absolute -bottom-[4vw] left-1/2 -translate-x-1/2"
             initial={{ opacity: 0, filter: "blur(4px)", marginBottom: -5 }}
             animate={{
               opacity: 1,
