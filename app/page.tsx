@@ -2,10 +2,12 @@ import { Link } from "@/components/link";
 import demos from "./(demos)/demos";
 
 export default async function Home() {
-  const interactions = demos.map((demo) => ({
-    title: demo.title.toLowerCase(),
-    path: demo.slug,
-  }));
+  const interactions = demos
+    .filter((d) => !d.draft)
+    .map((demo) => ({
+      title: demo.title.toLowerCase(),
+      path: demo.slug,
+    }));
 
   return (
     <main className="min-h-screen">
