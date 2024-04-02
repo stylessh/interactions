@@ -18,8 +18,8 @@ export function DemoWrapper({
     demo.slug;
 
   return (
-    <main className="min-h-screen">
-      <header className="max-w-screen-lg w-[90%] mx-auto h-24 md:h-48 mt-8 md:mt-16 flex items-start justify-between">
+    <main className="min-h-screen flex flex-col">
+      <header className="max-w-screen-lg w-[90%] mx-auto h-16 flex items-center justify-between">
         <h1>{demo.title}</h1>
 
         <div className="flex items-center space-x-6">
