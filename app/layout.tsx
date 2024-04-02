@@ -27,6 +27,20 @@ export const metadata: Metadata = {
     siteName: "Interactions",
   },
 
+  twitter: {
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 800,
+        alt: "Interactions",
+      },
+    ],
+    card: "summary_large_image",
+    creator: "@stylesshDev",
+    site: "https://interactions-matter.vercel.app",
+  },
+
   alternates: {
     canonical: "https://interactions.vercel.app",
   },
