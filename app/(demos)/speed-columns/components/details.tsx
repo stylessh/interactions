@@ -1,5 +1,4 @@
 import { getRandomGradient } from "@/lib/utils";
-import { MotionColumn } from "./motion-column";
 
 const skills = [
   "Design",
@@ -52,8 +51,8 @@ const clients = [
 
 export function Details() {
   return (
-    <MotionColumn id="details" multiplier={0.9}>
-      <div className="w-full h-64 bg-transparent" />
+    <>
+      <div className="w-full h-24 md:h-64 bg-transparent" />
 
       <article>
         <h2 className="text-primary text-xl">Skills</h2>
@@ -103,7 +102,7 @@ export function Details() {
           ))}
         </ul>
       </article>
-    </MotionColumn>
+    </>
   );
 }
 

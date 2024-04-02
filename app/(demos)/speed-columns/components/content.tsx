@@ -1,5 +1,3 @@
-import { MotionColumn } from "./motion-column";
-
 const posts = [
   {
     id: "post-1",
@@ -30,8 +28,8 @@ const posts = [
 
 export function Content() {
   return (
-    <MotionColumn id="content" multiplier={0.96}>
-      <div className="w-full h-44 bg-transparent" />
+    <>
+      <div className="w-full h-24 md:h-44 bg-transparent" />
 
       <section className="h-full">
         <article className="">
@@ -96,6 +94,6 @@ export function Content() {
           </p>
         </article>
       </section>
-    </MotionColumn>
+    </>
   );
 }
