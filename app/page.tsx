@@ -11,10 +11,19 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen">
-      <header className="max-w-screen-sm mx-auto pt-24 w-[90%]">
+      <header className="max-w-screen-sm mx-auto pt-24 w-[90%] flex justify-between items-center">
         <h1>
           interactions <span className="text-primary">matter</span>
         </h1>
+
+        <ul className="space-x-6">
+          <Link href="https://stylessh.dev" target="_blank">
+            stylessh
+          </Link>
+          <Link href="https://github.com/stylessh/interactions" target="_blank">
+            code
+          </Link>
+        </ul>
       </header>
 
       <section className="max-w-screen-sm mx-auto my-8 space-y-4 w-[90%]">
