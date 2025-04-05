@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import { Dot as DotType } from "../page";
+import { Dot as DotType } from "./content";
 import { useState } from "react";
 
 export function Dot({
