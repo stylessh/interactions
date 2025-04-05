@@ -7,7 +7,8 @@ export default async function Home() {
     .map((demo) => ({
       title: demo.title.toLowerCase(),
       path: demo.slug,
-    }));
+    }))
+    .toReversed()
 
   return (
     <main className="min-h-screen">
