@@ -1,4 +1,4 @@
-import { motion, MotionProps } from "framer-motion";
+import { motion, MotionProps } from "motion/react";
 import { ComponentProps, useContext } from "react";
 import { AnimationContext } from "../card";
 import { cn } from "@/lib/utils";

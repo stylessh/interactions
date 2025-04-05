@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useContext } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { AnimationContext } from "../card";
 
 export function Pill() {

@@ -21,7 +21,7 @@ export function DemoWrapper({
     demo.slug;
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen grid grid-rows-[auto_1fr]">
       <header
         className={cn(
           "max-w-screen-lg w-[90%] mx-auto h-16 flex items-center justify-between",

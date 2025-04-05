@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { Card } from "./components/card";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { features } from "./components/features";
 import { DemoWrapper } from "@/components/demo-wrapper";
 

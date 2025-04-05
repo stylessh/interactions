@@ -1,6 +1,8 @@
-import { motion } from "framer-motion";
+"use client";
+
 import { useContext } from "react";
 import { AnimationContext } from "../card";
+import { motion } from "motion/react";
 
 export function StackedCards() {
   const { shouldAnimate } = useContext(AnimationContext);

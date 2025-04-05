@@ -1,5 +1,7 @@
+"use client";
+
 import React, { createContext, useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 export const AnimationContext = createContext<{
   shouldAnimate: boolean;

@@ -6,15 +6,9 @@ const demos = [
     draft: false,
   },
   {
-    slug: "feedback",
-    title: "feedback",
-    description: "A demo to showcase a feedback input with micro-interactions",
-    draft: true,
-  },
-  {
-    slug: "speed-columns",
-    title: "speed columns",
-    description: "A demo to showcase a speed column layout",
+    slug: "dynamic-dots",
+    title: "dynamic dots",
+    description: "A demo to showcase dynamic dots",
     draft: false,
   },
 ] as const;
