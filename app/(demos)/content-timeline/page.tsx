@@ -71,14 +71,14 @@ export default function ContentTimeline() {
 
   // Update active checkpoint based on slider value
   useEffect(() => {
-    const closest = CHECKPOINTS.reduce((prev, curr) => {
-      return Math.abs(curr.value - sliderValue) <
-        Math.abs(prev.value - sliderValue)
-        ? curr
-        : prev;
-    });
-
-    setActiveCheckpoint(closest);
+    // Find the last checkpoint that we've passed
+    const passedCheckpoint = [...CHECKPOINTS]
+      .reverse()
+      .find(checkpoint => sliderValue >= checkpoint.value);
+    
+    if (passedCheckpoint) {
+      setActiveCheckpoint(passedCheckpoint);
+    }
   }, [sliderValue]);
 
   const updateSliderValue = useCallback((clientX: number) => {
