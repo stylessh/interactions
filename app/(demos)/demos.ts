@@ -11,6 +11,12 @@ const demos = [
     description: "A demo to showcase dynamic dots",
     draft: false,
   },
+  {
+    slug: "content-timeline",
+    title: "content timeline",
+    description: "A demo to showcase content timeline",
+    draft: false,
+  },
 ] as const;
 
 export type DemoSlug = (typeof demos)[number]["slug"];

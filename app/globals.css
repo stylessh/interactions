@@ -7,6 +7,16 @@
   --foreground-rgb: 120 120 137;
   --background-rgb: 244 242 248;
   --background-100-rgb: 255 255 255;
+
+  --sh-identifier: #c4c4c4;
+  --sh-keyword: #e24236;
+  --sh-string: #ce7227;
+  --sh-class: #6f66e5;
+  --sh-property: #4e8fdf;
+  --sh-entity: #6eafad;
+  --sh-jsxliterals: #bf7db6;
+  --sh-sign: #8996a3;
+  --sh-comment: #a19595;
 }
 
 @media (prefers-color-scheme: dark) {
