@@ -17,6 +17,15 @@ const config: Config = {
       container: {
         center: true,
       },
+      animation: {
+        "rotate-ticks": "rotateTicks 60s steps(60, end) infinite",
+      },
+      keyframes: {
+        rotateTicks: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
     },
   },
   plugins: [],
