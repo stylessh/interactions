@@ -33,23 +33,26 @@ function OrangeIndicator() {
 }
 
 function AnimatedLines({ count }: { count: number }) {
+  const circleAngle = 360;
   const totalLines = 40;
+  const lineAngle = circleAngle / totalLines;
+
   const lines = Array.from({ length: totalLines }, (_, i) => ({
     id: i,
-    angle: i * 9,
+    angle: i * lineAngle,
   }));
 
   const rotation = useMotionValue(0);
 
   useEffect(() => {
     const currentRotation = rotation.get();
-    animate(rotation, currentRotation - 9, {
+    animate(rotation, currentRotation - lineAngle, {
       type: "spring",
       duration: 0.75,
       bounce: 0.5,
       onComplete: () => {
         // If we've completed a full circle, reset to 0
-        if (rotation.get() <= -360) {
+        if (rotation.get() <= -circleAngle) {
           rotation.set(0);
         }
       },
