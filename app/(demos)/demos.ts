@@ -23,6 +23,12 @@ const demos = [
     description: "A demo to showcase countdown clock",
     draft: false,
   },
+  {
+    slug: "button-with-feedback",
+    title: "button with feedback",
+    description: "A demo to showcase button with feedback",
+    draft: false,
+  },
 ] as const;
 
 export type DemoSlug = (typeof demos)[number]["slug"];
