@@ -3,9 +3,7 @@
 import { DemoWrapper } from "@/components/demo-wrapper";
 import { Button } from "./components/button";
 import { MotionConfig } from "motion/react";
-
-const timeout = (ms: number) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
+import { timeout } from "@/lib/utils";
 
 export default function ButtonWithFeedback() {
   const handleClick = async () => {
