@@ -11,16 +11,20 @@
   "dependencies": {
     "@gsap/react": "^2.1.0",
     "@vercel/analytics": "^1.2.2",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.0",
     "gsap": "^3.12.5",
     "input-otp": "^1.4.2",
+    "lucide-react": "^0.503.0",
     "motion": "^12.6.3",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
     "react-use-measure": "^2.1.7",
+    "recharts": "^2.15.3",
     "sugar-high": "^0.9.3",
-    "tailwind-merge": "^2.2.2"
+    "tailwind-merge": "^2.2.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

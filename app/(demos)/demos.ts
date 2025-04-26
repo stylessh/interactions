@@ -35,6 +35,12 @@ const demos = [
     description: "A demo to showcase otp scanner",
     draft: false,
   },
+  {
+    slug: "analytics-card",
+    title: "analytics card",
+    description: "A demo to showcase analytics card",
+    draft: false,
+  },
 ] as const;
 
 export type DemoSlug = (typeof demos)[number]["slug"];
