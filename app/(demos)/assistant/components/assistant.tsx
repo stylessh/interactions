@@ -54,7 +54,7 @@ export function Assistant() {
             Navigating to Billing
           </p>
 
-          <Configuration className="size-6 text-neutral-50" />
+          <Configuration className="size-6 text-neutral-400" />
         </motion.div>
       </div>
 
@@ -168,9 +168,9 @@ const PhoneOff = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-const Configuration = (props: SVGProps<SVGSVGElement>) => {
+const Configuration = (props: SVGProps<SVGSVGElement> & MotionProps) => {
   return (
-    <svg
+    <motion.svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="none"
@@ -178,11 +178,43 @@ const Configuration = (props: SVGProps<SVGSVGElement>) => {
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.5 }}
+      transition={{ ...DEFAULT_TRANSITION, delay: 0.37, staggerChildren: 0.15 }}
       {...props}
     >
-      <circle cx="12" cy="12" r="1" />
-      <circle cx="19" cy="12" r="1" />
-      <circle cx="5" cy="12" r="1" />
-    </svg>
+      <motion.circle
+        cx="12"
+        cy="12"
+        r="1"
+        animate={{ y: [0, -0.5, 0] }}
+        transition={{ duration: 0.6, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.circle
+        cx="19"
+        cy="12"
+        r="1"
+        animate={{ y: [0, -0.5, 0] }}
+        transition={{
+          duration: 0.6,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 0.2,
+        }}
+      />
+      <motion.circle
+        cx="5"
+        cy="12"
+        r="1"
+        animate={{ y: [0, -0.5, 0] }}
+        transition={{
+          duration: 0.6,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 0.4,
+        }}
+      />
+    </motion.svg>
   );
 };
