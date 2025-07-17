@@ -47,6 +47,13 @@ const demos = [
     description: "A demo to showcase assistant",
     draft: false,
   },
+  {
+    slug: "shortcut-button",
+    title: "shortcut button",
+    description:
+      "A demo to showcase shortcut button that reacts to the shortcut press.",
+    draft: false,
+  },
 ] as const;
 
 export type DemoSlug = (typeof demos)[number]["slug"];

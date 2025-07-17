@@ -21,10 +21,11 @@ export function DemoWrapper({
     demo.slug;
 
   return (
-    <main className="min-h-screen grid grid-rows-[auto_1fr]">
+    <main className="min-h-screen grid grid-rows-[auto_1fr] [--header-height:4rem]">
       <header
         className={cn(
-          "max-w-screen-lg w-[90%] mx-auto h-16 flex items-center justify-between",
+          "max-w-screen-lg w-[90%] mx-auto h-[--header-height] flex items-center justify-between",
+          "fixed top-0 left-0 right-0 z-10",
           headerClassName
         )}
       >
@@ -39,7 +40,9 @@ export function DemoWrapper({
         </div>
       </header>
 
-      {children}
+      <div className="h-[calc(100vh-var(--header-height))] w-full [&>div]:h-full">
+        {children}
+      </div>
     </main>
   );
 }
