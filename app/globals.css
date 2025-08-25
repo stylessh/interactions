@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --primary-rgb: 10 10 11;
-  --foreground-rgb: 120 120 137;
-  --background-rgb: 244 242 248;
-  --background-100-rgb: 255 255 255;
+  --primary-rgb: 207 207 211;
+  --foreground-rgb: 160 160 167;
+  --background-rgb: 15 15 16;
+  --background-100-rgb: 24 24 26;
 
   --sh-identifier: #c4c4c4;
   --sh-keyword: #e24236;
@@ -17,15 +17,6 @@
   --sh-jsxliterals: #bf7db6;
   --sh-sign: #8996a3;
   --sh-comment: #a19595;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-rgb: 207 207 211;
-    --foreground-rgb: 160 160 167;
-    --background-rgb: 15 15 16;
-    --background-100-rgb: 24 24 26;
-  }
 }
 
 @layer utilities {
