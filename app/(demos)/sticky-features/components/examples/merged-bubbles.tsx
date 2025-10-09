@@ -12,7 +12,7 @@ const variants = {
 
     transition: {
       bounce: 0.4,
-      type: "spring",
+      type: "spring" as const,
       duration: 0.5,
 
       delay: 0.2,
@@ -24,7 +24,7 @@ const variants = {
 
     transition: {
       bounce: 0.4,
-      type: "spring",
+      type: "spring" as const,
       duration: 0.5,
 
       delay: 0.4,

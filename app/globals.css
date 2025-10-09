@@ -3,20 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --primary-rgb: 207 207 211;
-  --foreground-rgb: 160 160 167;
-  --background-rgb: 15 15 16;
-  --background-100-rgb: 24 24 26;
+  --base-100: oklch(0.95 0.001 71);
+  --base-200: oklch(0.87 0.002 71);
+  --base-300: oklch(0.79 0.004 71);
+  --base-400: oklch(0.71 0.005 71);
+  --base-500: oklch(0.63 0.006 71);
+  --base-600: oklch(0.55 0.008 71);
+  --base-700: oklch(0.47 0.009 71);
+  --base-800: oklch(0.39 0.01 71);
+  --base-900: oklch(0.31 0.012 71);
+}
 
-  --sh-identifier: #c4c4c4;
-  --sh-keyword: #e24236;
-  --sh-string: #ce7227;
-  --sh-class: #6f66e5;
-  --sh-property: #4e8fdf;
-  --sh-entity: #6eafad;
-  --sh-jsxliterals: #bf7db6;
-  --sh-sign: #8996a3;
-  --sh-comment: #a19595;
+.dark {
+  --base-100: oklch(0.05 0.001 71);
+  --base-200: oklch(0.13 0.002 71);
+  --base-300: oklch(0.21 0.004 71);
+  --base-400: oklch(0.29 0.005 71);
+  --base-500: oklch(0.37 0.006 71);
+  --base-600: oklch(0.45 0.008 71);
+  --base-700: oklch(0.53 0.009 71);
+  --base-800: oklch(0.61 0.01 71);
+  --base-900: oklch(0.69 0.012 71);
 }
 
 @layer utilities {

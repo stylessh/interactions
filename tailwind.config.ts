@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "rgb(var(--background-rgb))",
-        "background-100": "rgb(var(--background-100-rgb))",
-        foreground: "rgb(var(--foreground-rgb))",
-        primary: "rgb(var(--primary-rgb))",
+        background: "var(--base-200)",
+        "background-100": "var(--base-300)",
+        foreground: "var(--base-600)",
+        primary: "var(--base-900)",
       },
       container: {
         center: true,

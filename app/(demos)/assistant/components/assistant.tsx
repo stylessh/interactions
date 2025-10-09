@@ -5,7 +5,7 @@ import { AnimatePresence, motion, MotionProps } from "motion/react";
 import { cn } from "@/lib/utils";
 
 const DEFAULT_TRANSITION = {
-  type: "spring",
+  type: "spring" as const,
   duration: 0.25,
   bounce: 0.1,
 };

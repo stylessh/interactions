@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import { Chart } from "./chart";
 
 export const DEFAULT_TRANSITION = {
-  type: "spring",
+  type: "spring" as const,
   duration: 0.65,
   bounce: 0.25,
 };

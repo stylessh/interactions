@@ -27,7 +27,7 @@ const buttonVariants = {
     filter: "blur(0px)",
 
     transition: {
-      type: "spring",
+      type: "spring" as const,
       duration: 0.4,
     },
   },
@@ -36,7 +36,7 @@ const buttonVariants = {
     filter: "blur(2px)",
 
     transition: {
-      type: "spring",
+      type: "spring" as const,
       duration: 0.4,
     },
   },

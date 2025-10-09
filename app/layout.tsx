@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { ThemeWrapper } from "@/components/theme-wrapper";
 
 const inter = Space_Grotesk({ subsets: ["latin"] });
 
@@ -52,14 +53,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           inter.className,
           "bg-background text-foreground antialiased"
         )}
       >
-        {children}
+        <ThemeWrapper>{children}</ThemeWrapper>
 
         <Analytics />
       </body>
