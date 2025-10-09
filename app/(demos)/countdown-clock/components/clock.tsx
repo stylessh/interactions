@@ -68,7 +68,7 @@ function AnimatedLines({ count }: { count: number }) {
         <div
           key={line.id}
           className={cn(
-            "absolute top-1/2 left-1/2 w-[70px] h-[1px] origin-left opacity-50 bg-neutral-600",
+            "absolute top-1/2 left-1/2 w-[70px] h-px origin-left opacity-50 bg-neutral-600",
             line.id % 5 === 0 && "bg-white"
           )}
           style={{
@@ -98,9 +98,9 @@ export function Clock() {
 
       <OrangeIndicator />
 
-      <div className="absolute -right-[30%] top-1/2 -translate-y-1/2 size-8 rounded-full bg-gradient-to-br from-neutral-950 to-neutral-700 blur-sm z-0" />
-      <div className="absolute -right-2 top-1/2 -translate-y-1/2 size-6 rounded-full bg-gradient-to-br from-white to-neutral-500 z-10 shadow-md" />
-      <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-neutral-900 from-5% to-transparent z-5" />
+      <div className="absolute -right-[30%] top-1/2 -translate-y-1/2 size-8 rounded-full bg-linear-to-br from-neutral-950 to-neutral-700 blur-xs z-0" />
+      <div className="absolute -right-2 top-1/2 -translate-y-1/2 size-6 rounded-full bg-linear-to-br from-white to-neutral-500 z-10 shadow-md" />
+      <div className="absolute inset-y-0 right-0 w-20 bg-linear-to-l from-neutral-900 from-5% to-transparent z-5" />
     </div>
   );
 }

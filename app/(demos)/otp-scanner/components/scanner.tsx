@@ -23,7 +23,7 @@ export function Scanner() {
         className={cn(
           "w-px h-[150%]",
           "absolute -top-[25%]",
-          "bg-gradient-to-b from-background via-red-500 to-background",
+          "bg-linear-to-b from-background via-red-500 to-background",
           "origin-center"
         )}
       >

@@ -60,7 +60,7 @@ const ChartContainer = React.forwardRef<
         data-chart={chartId}
         ref={ref}
         className={cn(
-          "flex aspect-video justify-center text-xs [&_.recharts-cartesian-axis-tick_text]:fill-foreground [&_.recharts-cartesian-grid_line]:stroke-foreground/10 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-foreground/20 [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-none [&_.recharts-polar-grid]:stroke-foreground/10 [&_.recharts-radial-bar-background-sector]:fill-foreground/5 [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-foreground/5 [&_.recharts-reference-line]:stroke-foreground/20 [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-none [&_.recharts-surface]:outline-none",
+          "flex aspect-video justify-center text-xs [&_.recharts-cartesian-axis-tick_text]:fill-foreground [&_.recharts-cartesian-grid_line]:stroke-foreground/10 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-foreground/20 [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid]:stroke-foreground/10 [&_.recharts-radial-bar-background-sector]:fill-foreground/5 [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-foreground/5 [&_.recharts-reference-line]:stroke-foreground/20 [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden",
           className
         )}
         {...props}
@@ -187,7 +187,7 @@ const ChartTooltipContent = React.forwardRef<
       <div
         ref={ref}
         className={cn(
-          "grid min-w-[8rem] items-start gap-1.5 rounded-lg border border-foreground/10 bg-background-100 px-2.5 py-1.5 text-xs shadow-xl",
+          "grid min-w-32 items-start gap-1.5 rounded-lg border border-foreground/10 bg-background-100 px-2.5 py-1.5 text-xs shadow-xl",
           className
         )}
       >
@@ -216,7 +216,7 @@ const ChartTooltipContent = React.forwardRef<
                       !hideIndicator && (
                         <div
                           className={cn(
-                            "shrink-0 rounded-[2px] border-[--color-border] bg-[--color-bg]",
+                            "shrink-0 rounded-[2px] border-(--color-border) bg-(--color-bg)",
                             {
                               "h-2.5 w-2.5": indicator === "dot",
                               "w-1": indicator === "line",

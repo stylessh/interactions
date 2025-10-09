@@ -9,7 +9,7 @@ export function Pill() {
 
   return (
     <motion.div
-      className="bg-primary/5 dark:bg-primary/10 w-1/2 aspect-[16/2] rounded-[99px] shadow-md flex items-center justify-between px-1.5 gap-x-2"
+      className="bg-primary/5 dark:bg-primary/10 w-1/2 aspect-16/2 rounded-[99px] shadow-md flex items-center justify-between px-1.5 gap-x-2"
       initial={{ opacity: 0, scale: 0.5 }}
       whileInView={{
         scale: 1,

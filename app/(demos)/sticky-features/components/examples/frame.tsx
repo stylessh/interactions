@@ -16,7 +16,7 @@ export function Frame() {
         Frame
       </motion.div>
       <motion.div
-        className="w-full aspect-[2/2] border border-[#1f6eb7] p-3"
+        className="w-full aspect-2/2 border border-[#1f6eb7] p-3"
         initial={{ opacity: 0 }}
         animate={shouldAnimate ? { opacity: 1 } : {}}
       >
@@ -58,13 +58,13 @@ export function Frame() {
 
           <div className=" w-full relative pt-3">
             <motion.div
-              className="w-full aspect-[16/2] bg-gray-500/10 rounded-md"
+              className="w-full aspect-16/2 bg-gray-500/10 rounded-md"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={shouldAnimate ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.8 }}
             />
 
-            <div className="grid grid-cols-[60%,1fr] gap-2 h-full md:h-[138px] mt-2">
+            <div className="grid grid-cols-[60%_1fr] gap-2 h-full md:h-[138px] mt-2">
               <motion.div
                 className="bg-orange-500/10 rounded-md"
                 initial={{ opacity: 0, scale: 0.9 }}

@@ -142,7 +142,7 @@ export function Button({
       <AnimatePresence initial={false}>
         {status === "success" || status === "error" ? (
           <motion.div
-            className="absolute -top-2 h-4 z-5 bg-gradient-to-t from-neutral-900/50 to-transparent w-[90%] mx-auto inset-x-0 blur-sm"
+            className="absolute -top-2 h-4 z-5 bg-linear-to-t from-neutral-900/50 to-transparent w-[90%] mx-auto inset-x-0 blur-xs"
             variants={buttonVariants}
             initial="hide"
             animate="default"

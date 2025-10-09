@@ -12,7 +12,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen">
-      <header className="max-w-screen-sm mx-auto pt-24 w-[90%] flex justify-between items-center">
+      <header className="max-w-(--breakpoint-sm) mx-auto pt-24 w-[90%] flex justify-between items-center">
         <h1>
           interactions <span className="text-primary">matter</span>
         </h1>
@@ -27,7 +27,7 @@ export default async function Home() {
         </ul>
       </header>
 
-      <section className="max-w-screen-sm mx-auto my-8 space-y-4 w-[90%]">
+      <section className="max-w-(--breakpoint-sm) mx-auto my-8 space-y-4 w-[90%]">
         <p className="md:w-5/6 text-pretty">
           here you can find a curated list of demos that showcase the power of
           delightful interactions.
@@ -50,7 +50,7 @@ export default async function Home() {
         </p>
       </section>
 
-      <section className="max-w-screen-sm mx-auto mt-16 space-y-4 w-[90%]">
+      <section className="max-w-(--breakpoint-sm) mx-auto mt-16 space-y-4 w-[90%]">
         <h2>check out the latest interactions</h2>
 
         <ul className="px-6 space-y-2">

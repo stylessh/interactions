@@ -20,7 +20,7 @@ export function Card({
 
   return (
     <motion.li
-      className="bg-background-100 rounded-md w-full aspect-[4/3] grid place-items-center"
+      className="bg-background-100 rounded-md w-full aspect-4/3 grid place-items-center"
       initial={{ scale: 0.96, opacity: 0.5 }}
       whileInView={{
         opacity: 1,

@@ -24,7 +24,7 @@ export function DemoWrapper({
     <main className="min-h-screen grid grid-rows-[auto_1fr] [--header-height:4rem]">
       <header
         className={cn(
-          "max-w-screen-lg w-[90%] mx-auto h-[--header-height] flex items-center justify-between",
+          "max-w-(--breakpoint-lg) w-[90%] mx-auto h-(--header-height) flex items-center justify-between",
           "fixed top-0 left-0 right-0 z-10",
           headerClassName
         )}

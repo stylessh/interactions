@@ -6,7 +6,7 @@ export default function CountdownClock() {
   return (
     <DemoWrapper name="countdown-clock">
       <div className="flex flex-col justify-center items-center h-full">
-        <div className="grid grid-cols-[1fr,auto] w-[300px] aspect-[16/5] bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden">
+        <div className="grid grid-cols-[1fr_auto] w-[300px] aspect-16/5 bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden">
           <div className="p-4">
             <Countdown />
 

@@ -17,7 +17,7 @@ export function Input({
         minLength={6}
         maxLength={6}
         containerClassName={cn(
-          "group flex items-center gap-x-2 has-[:disabled]:opacity-30",
+          "group flex items-center gap-x-2 has-disabled:opacity-30",
           {
             "pointer-events-none opacity-30": disabled,
           }
@@ -82,7 +82,7 @@ const FakeDash = () => {
       exit={{ opacity: 0, scale: 0.95 }}
       className="grid w-full place-items-center absolute inset-0"
     >
-      <div className="w-3 h-2 rounded-sm bg-neutral-300" />
+      <div className="w-3 h-2 rounded-xs bg-neutral-300" />
     </motion.div>
   );
 };

@@ -11,7 +11,7 @@ export function Link({
     <NextLink
       {...props}
       className={cn(
-        "relative text-primary hover:after:bg-primary/50 after:w-full after:inline-block after:h-[1px] after:bg-primary/10 after:absolute after:left-0 after:-bottom-[1.5px] after:transition-colors",
+        "relative text-primary hover:after:bg-primary/50 after:w-full after:inline-block after:h-px after:bg-primary/10 after:absolute after:left-0 after:-bottom-[1.5px] after:transition-colors",
         className
       )}
     >

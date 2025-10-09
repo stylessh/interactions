@@ -110,7 +110,7 @@ const Avatar = () => {
   return (
     <motion.div
       layoutId="assistant-avatar"
-      className="size-12 bg-gradient-to-br from-neutral-800 to-neutral-900 border border-neutral-700 rounded-full"
+      className="size-12 bg-linear-to-br from-neutral-800 to-neutral-900 border border-neutral-700 rounded-full"
       transition={DEFAULT_TRANSITION}
     />
   );
@@ -138,7 +138,7 @@ const BorealGradient = () => {
       className="absolute inset-0 blur-[10px] -z-10 rounded-3xl overflow-hidden"
     >
       <div
-        className="absolute -inset-[100%] animate-[spin_4s_linear_infinite]"
+        className="absolute -inset-full animate-[spin_4s_linear_infinite]"
         style={{
           background:
             "conic-gradient(from 180deg at 50.00% 50.00%, #FFB7B7 0deg, rgba(151, 71, 255, 0.50) 180deg, #48E3AB 270deg, #FFC4C4 360deg)",

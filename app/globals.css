@@ -1,37 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-  --base-100: oklch(0.95 0.001 71);
-  --base-200: oklch(0.87 0.002 71);
-  --base-300: oklch(0.79 0.004 71);
-  --base-400: oklch(0.71 0.005 71);
-  --base-500: oklch(0.63 0.006 71);
-  --base-600: oklch(0.55 0.008 71);
-  --base-700: oklch(0.47 0.009 71);
-  --base-800: oklch(0.39 0.01 71);
-  --base-900: oklch(0.31 0.012 71);
+@utility container {
+  margin-inline: auto;
 }
 
-.dark {
-  --base-100: oklch(0.05 0.001 71);
-  --base-200: oklch(0.13 0.002 71);
-  --base-300: oklch(0.21 0.004 71);
-  --base-400: oklch(0.29 0.005 71);
-  --base-500: oklch(0.37 0.006 71);
-  --base-600: oklch(0.45 0.008 71);
-  --base-700: oklch(0.53 0.009 71);
-  --base-800: oklch(0.61 0.01 71);
-  --base-900: oklch(0.69 0.012 71);
+@theme {
+  --color-background: var(--base-200);
+  --color-background-100: var(--base-300);
+  --color-foreground: var(--base-600);
+  --color-primary: var(--base-900);
+
+  --animate-rotate-ticks: rotateTicks 60s steps(60, end) infinite;
+  --animate-caret-blink: caret-blink 850ms ease-out infinite;
+
+  @keyframes rotateTicks {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes caret-blink {
+    0%,
+    70%,
+    100% {
+      opacity: 1;
+    }
+    20%,
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--base-800, currentcolor);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility text-pretty {
+  text-wrap: pretty;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  :root {
+    --base-100: oklch(0.95 0.001 71);
+    --base-200: oklch(0.87 0.002 71);
+    --base-300: oklch(0.79 0.004 71);
+    --base-400: oklch(0.71 0.005 71);
+    --base-500: oklch(0.63 0.006 71);
+    --base-600: oklch(0.55 0.008 71);
+    --base-700: oklch(0.47 0.009 71);
+    --base-800: oklch(0.39 0.01 71);
+    --base-900: oklch(0.31 0.012 71);
   }
 
-  .text-pretty {
-    text-wrap: pretty;
+  .dark {
+    --base-100: oklch(0.05 0.001 71);
+    --base-200: oklch(0.13 0.002 71);
+    --base-300: oklch(0.21 0.004 71);
+    --base-400: oklch(0.29 0.005 71);
+    --base-500: oklch(0.37 0.006 71);
+    --base-600: oklch(0.45 0.008 71);
+    --base-700: oklch(0.53 0.009 71);
+    --base-800: oklch(0.61 0.01 71);
+    --base-900: oklch(0.69 0.012 71);
   }
 }

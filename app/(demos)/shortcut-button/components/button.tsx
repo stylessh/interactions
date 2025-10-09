@@ -51,7 +51,7 @@ export function Button({
         "shadow-[inset_0_-3px_0px_0px_var(--tw-shadow-color)]",
         "flex items-center gap-3.5",
 
-        "ring-0 outline-none focus-visible:outline-white",
+        "ring-0 outline-hidden focus-visible:outline-white",
 
         variant === "default" &&
           "bg-neutral-800 border border-neutral-700 shadow-neutral-700/50 ",
