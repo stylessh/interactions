@@ -20,10 +20,10 @@ export type ChartConfig = {
 
 // Default chart colors that match the project's theme
 const DEFAULT_COLORS = {
-  primary: "rgb(var(--primary-rgb))",
-  foreground: "rgb(var(--foreground-rgb))",
-  background: "rgb(var(--background-rgb))",
-  "background-100": "rgb(var(--background-100-rgb))",
+  primary: "var(--color-primary)",
+  foreground: "var(--color-foreground)",
+  background: "var(--color-background)",
+  "background-100": "var(--color-background-100)",
 }
 
 type ChartContextProps = {
