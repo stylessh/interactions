@@ -154,7 +154,7 @@ export function Button({
       <motion.button
         onClick={handleClick}
         className={cn(
-          "bg-neutral-900 border border-neutral-800 rounded-xl px-10 py-2.5 text-lg ease-in-out transition-colors relative z-10",
+          "bg-neutral-800 border border-neutral-700 rounded-xl px-10 py-2.5 text-lg ease-in-out transition-colors relative z-10",
           status === "default" && "hover:bg-neutral-800/50"
         )}
         disabled={status === "loading"}

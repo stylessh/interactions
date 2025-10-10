@@ -15,7 +15,7 @@ export default function DynamicDots() {
     <DemoWrapper name="dynamic-dots">
       <div className="grid place-items-center">
         <div className="relative">
-          <motion.div layout className="w-max px-2 py-1.5 bg-neutral-900 border border-neutral-800 rounded-full flex items-center justify-center gap-x-2">
+          <motion.div layout className="w-max px-2 py-1.5 bg-neutral-700 border border-neutral-600 rounded-full flex items-center justify-center gap-x-2">
             {DOTS.map((dot) => (
               <Dot 
                 key={dot.id} 

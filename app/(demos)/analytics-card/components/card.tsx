@@ -29,7 +29,7 @@ const CardDetails = ({
   return (
     <motion.div
       layoutId="card-wrapper"
-      className="bg-neutral-900 rounded-xl w-full max-w-[720px] p-1 flex flex-col gap-1"
+      className="bg-neutral-800 border border-neutral-700 rounded-xl w-full max-w-[720px] p-1 flex flex-col gap-1"
       transition={{
         layout: DEFAULT_TRANSITION,
       }}
@@ -55,9 +55,9 @@ const CardDetails = ({
           animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           exit={{ opacity: 0, filter: "blur(4px)", y: -5 }}
           transition={{ ...DEFAULT_TRANSITION, delay: 0.15 }}
-          className="flex items-center h-max bg-neutral-800 border border-neutral-700 rounded-lg"
+          className="flex items-center h-max bg-neutral-700 border border-neutral-600 rounded-lg"
         >
-          <div className="py-1.5 px-2.5 border-r border-neutral-700 h-full flex items-center justify-center">
+          <div className="py-1.5 px-2.5 border-r border-neutral-600 h-full flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -89,7 +89,7 @@ const CardDetails = ({
       <motion.div
         layout
         layoutId="card-content"
-        className="bg-neutral-900 border border-neutral-800 rounded-lg aspect-video w-full origin-center"
+        className="bg-neutral-700 border border-neutral-600 rounded-lg aspect-video w-full origin-center"
         transition={{
           layout: DEFAULT_TRANSITION,
         }}
@@ -109,7 +109,7 @@ const CardPreview = ({
     <motion.div
       layout
       layoutId="card-wrapper"
-      className="bg-neutral-900 rounded-xl w-full max-w-[380px] p-1"
+      className="bg-neutral-800 border border-neutral-700 rounded-xl w-full max-w-[380px] p-1"
       onClick={() => setIsExpanded(true)}
       transition={{
         layout: DEFAULT_TRANSITION,
@@ -118,14 +118,14 @@ const CardPreview = ({
       <div className="p-2 flex justify-between items-center">
         <motion.h3
           layoutId="card-title"
-          className="text-neutral-100 text-md font-medium"
+          className="text-foreground text-md font-medium"
         >
           Analytics
         </motion.h3>
 
         <motion.p
           layoutId="card-time-interval"
-          className="text-neutral-400 text-sm font-medium inline-flex items-center gap-1"
+          className="text-muted-foreground text-sm font-medium inline-flex items-center gap-1"
         >
           24h
           <ArrowRight />
@@ -135,14 +135,14 @@ const CardPreview = ({
       <motion.div
         layout
         layoutId="card-content"
-        className="bg-neutral-800 border border-neutral-700 rounded-lg p-2 w-full origin-center"
+        className="bg-neutral-700 border border-neutral-600 rounded-lg p-2 w-full origin-center"
         transition={{
           layout: DEFAULT_TRANSITION,
         }}
       >
         <div className="flex justify-between items-end">
           <div className="flex flex-col gap-1">
-            <p className="text-neutral-100 text-2xl font-medium">
+            <p className="text-foreground text-2xl font-medium">
               2,623 <span className="text-neutral-400 text-sm">views</span>
             </p>
             <OnlineCount />

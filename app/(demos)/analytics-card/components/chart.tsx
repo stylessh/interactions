@@ -150,14 +150,14 @@ export function Chart() {
       exit={{ opacity: 0, filter: "blur(4px)" }}
       transition={{ ...DEFAULT_TRANSITION, delay: 0.25 }}
     >
-      <CardHeader className="flex overflow-hidden border-b border-neutral-800 p-0">
+      <CardHeader className="flex overflow-hidden border-b border-neutral-600 p-0">
         {["desktop", "mobile"].map((key) => {
           const chart = key as keyof typeof chartConfig;
           return (
             <button
               key={chart}
               data-active={activeChart === chart}
-              className="relative z-30 flex flex-1 flex-col border-t border-neutral-800 justify-center gap-1 px-6 py-4 text-left data-[active=true]:bg-neutral-800/20 sm:border-r last:border-r-0 sm:border-t-0 sm:px-6 sm:py-4 transition-colors duration-200"
+              className="relative z-30 flex flex-1 flex-col border-t border-neutral-600 justify-center gap-1 px-6 py-4 text-left data-[active=true]:bg-neutral-800/20 sm:border-r last:border-r-0 sm:border-t-0 sm:px-6 sm:py-4 transition-colors duration-200"
               onClick={() => setActiveChart(chart)}
             >
               <span className="text-xs text-neutral-400">

@@ -44,12 +44,12 @@ const Slot = (props: SlotProps) => {
         "relative w-12 aspect-[3/3.5] text-[2rem]",
         "flex items-center justify-center",
         "transition-all duration-200",
-        "bg-neutral-900 rounded-md",
-        "border border-neutral-800",
+        "bg-neutral-800 rounded-md",
+        "border border-neutral-700",
         "shadow-[0_0_0_1px_rgba(0,0,0,0.1)]",
         "shadow-md",
 
-        { "bg-neutral-900/50": props.isActive }
+        { "bg-neutral-700/50": props.isActive }
       )}
     >
       <div className="group-has-[input[data-input-otp-placeholder-shown]]:opacity-20">

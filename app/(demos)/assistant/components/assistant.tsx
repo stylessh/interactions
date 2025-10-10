@@ -48,7 +48,7 @@ export function Assistant() {
           animate={{ opacity: 1, filter: "blur(0px)" }}
           exit={{ opacity: 0, filter: "blur(10px)" }}
           transition={DEFAULT_TRANSITION}
-          className="flex justify-between gap-x-8 border-t border-neutral-800 pt-2 pr-1"
+          className="flex justify-between gap-x-8 border-t border-neutral-600 pt-2 pr-1"
         >
           <p className="text-neutral-50 text-lg font-medium">
             Navigating to Billing
@@ -74,7 +74,7 @@ const Card = ({
     <motion.div
       layoutId="assistant-card"
       className={cn(
-        "bg-neutral-900 border border-neutral-800 p-3 rounded-2xl relative",
+        "bg-background-100 border border-neutral-600 p-3 rounded-2xl relative",
         className
       )}
       transition={DEFAULT_TRANSITION}
@@ -110,7 +110,7 @@ const Avatar = () => {
   return (
     <motion.div
       layoutId="assistant-avatar"
-      className="size-12 bg-linear-to-br from-neutral-800 to-neutral-900 border border-neutral-700 rounded-full"
+      className="size-12 bg-linear-to-br from-neutral-700 to-neutral-800 border border-neutral-600 rounded-full"
       transition={DEFAULT_TRANSITION}
     />
   );
@@ -120,7 +120,7 @@ const OffButton = () => {
   return (
     <motion.button
       layoutId="assistant-off-button"
-      className="size-12 bg-neutral-900 border border-neutral-700 rounded-full grid place-items-center"
+      className="size-12 bg-neutral-700 border border-neutral-600 rounded-full grid place-items-center"
       transition={DEFAULT_TRANSITION}
     >
       <PhoneOff className="size-6 text-neutral-50" />

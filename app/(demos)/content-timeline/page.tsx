@@ -211,7 +211,7 @@ export default function ContentTimeline() {
                 duration: 0.4,
                 bounce: 0.1,
               }}
-              className="w-full bg-neutral-900 border border-neutral-800 rounded-md absolute left-1/2 -translate-x-1/2 bottom-[calc(55%+1rem)] overflow-hidden"
+              className="w-full bg-neutral-700 border border-neutral-600 rounded-md absolute left-1/2 -translate-x-1/2 bottom-[calc(55%+1rem)] overflow-hidden"
             >
               <div ref={cardRef} className="relative overflow-hidden p-4">
                 <AnimatePresence mode="popLayout" initial={false}>
@@ -268,7 +268,7 @@ export default function ContentTimeline() {
                   className={`h-6 ${
                     bar.isCheckpoint
                       ? "bg-neutral-300 w-[2px]"
-                      : "bg-neutral-800 w-px"
+                      : "bg-neutral-700 w-px"
                   }`}
                   style={{
                     position: "absolute",

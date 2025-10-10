@@ -100,7 +100,7 @@ export function Clock() {
 
       <div className="absolute -right-[30%] top-1/2 -translate-y-1/2 size-8 rounded-full bg-linear-to-br from-neutral-950 to-neutral-700 blur-xs z-0" />
       <div className="absolute -right-2 top-1/2 -translate-y-1/2 size-6 rounded-full bg-linear-to-br from-white to-neutral-500 z-10 shadow-md" />
-      <div className="absolute inset-y-0 right-0 w-20 bg-linear-to-l from-neutral-900 from-5% to-transparent z-5" />
+      <div className="absolute inset-y-0 right-0 w-20 bg-linear-to-l from-neutral-700 from-5% to-transparent z-5" />
     </div>
   );
 }

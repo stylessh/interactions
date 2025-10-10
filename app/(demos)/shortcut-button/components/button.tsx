@@ -54,7 +54,7 @@ export function Button({
         "ring-0 outline-hidden focus-visible:outline-white",
 
         variant === "default" &&
-          "bg-neutral-800 border border-neutral-700 shadow-neutral-700/50 ",
+          "bg-neutral-700 border border-neutral-600 shadow-neutral-600/50 ",
         variant === "primary" &&
           "bg-green-700 border border-green-500 shadow-green-500/50 text-white",
         props.className

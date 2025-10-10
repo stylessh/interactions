@@ -25,7 +25,7 @@ export function Countdown() {
 
   return (
     <div className="flex items-center gap-x-4 text-3xl">
-      <p className="font-black text-neutral-500">
+      <p className="font-black text-neutral-300">
         <motion.span layout>
           <AnimatePresence mode="popLayout" initial={false}>
             {minutes
