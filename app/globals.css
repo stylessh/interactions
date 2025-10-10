@@ -10,6 +10,16 @@
   --color-foreground: var(--base-600);
   --color-primary: var(--base-900);
 
+  --color-neutral-100: var(--base-900);
+  --color-neutral-200: var(--base-800);
+  --color-neutral-300: var(--base-700);
+  --color-neutral-400: var(--base-600);
+  --color-neutral-500: var(--base-500);
+  --color-neutral-600: var(--base-400);
+  --color-neutral-700: var(--base-300);
+  --color-neutral-800: var(--base-200);
+  --color-neutral-900: var(--base-100);
+
   --animate-rotate-ticks: rotateTicks 60s steps(60, end) infinite;
   --animate-caret-blink: caret-blink 850ms ease-out infinite;
 
